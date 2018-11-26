@@ -18,13 +18,13 @@ public class AppHerencia {
 
        while ( leer.hasNext()) {
             String tipo = leer.next();
-            if(tipo.equalsIgnoreCase("Base")){
+            if(tipo.equalsIgnoreCase("B")){
                 trabajador.add(new EmpleadoBase(leer));
             }
-            if(tipo.equalsIgnoreCase("Eventual")){
+            if(tipo.equalsIgnoreCase("E")){
                 trabajador.add(new EmpleadoEventual(leer));
             }
-            if(tipo.equalsIgnoreCase("Eventual_Especializado")){
+            if(tipo.equalsIgnoreCase("EE")){
                 trabajador.add(new EmpleadoEspecializado(leer));
             }
 
