@@ -1,3 +1,5 @@
-B Base	Emmanuel	ing	20	200.0
-B Base    Sarahi  Mesera  16  100.0
-EE Eventual_Especializado  Alexia  secretaria    12  400.0
+B   Base    Mane    ingeniero	3	200.0
+B   Base    Sarahi  Mesera  2  100.0
+EE  Eventual_Especializado  Alexia  secretaria    2  400.0
+EE  Eventual_Especializado  Luis    Plomero 0  1000.0
+B Base  Jessi   Comisionista    2   5000.0

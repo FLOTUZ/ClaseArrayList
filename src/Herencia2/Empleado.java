@@ -7,7 +7,7 @@ public class Empleado {
     private String nombre;
     protected String tipo;
     private String puesto ;
-    private byte edad;
+    private byte faltas;
     private float sueldo;
 
     Empleado(){     }   //Costructor
@@ -16,7 +16,7 @@ public class Empleado {
         this.tipo = leer.next();
         this.nombre = leer.next();
         this.puesto = leer.next();
-        this.edad = leer.nextByte();
+        this.faltas= leer.nextByte();
         this.sueldo = leer.nextFloat();
     }
 
@@ -28,8 +28,8 @@ public class Empleado {
         return puesto;
     }
 
-    public byte getEdad() {
-        return edad;
+    public byte getFaltas() {
+        return faltas;
     }
 
     public String getNombre() {
@@ -42,6 +42,6 @@ public class Empleado {
 
     public String toString(){
         return tipo + "\t" + nombre +"\t"
-                +puesto +"\t" + edad + "\t" + sueldo;
+                +puesto +"\t" + faltas + "\t" + sueldo;
     }
 }

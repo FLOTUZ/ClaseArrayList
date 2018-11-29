@@ -10,7 +10,11 @@ public class EmpleadoEspecializado extends Empleado  implements RH{
 
     @Override
     public double calcularSueldo() {
-        float sueldoFinal = (float) (getSueldo() + (getSueldo()*.5));
+        double sueldoFinal;
+        if (getPuesto().equalsIgnoreCase("Plomero")) {
+            sueldoFinal = getSueldo() + 100;    //Bono a plomero
+        }
+        else {sueldoFinal = (float) (getSueldo() + (getSueldo()*.5));}
         return sueldoFinal;
     }
 }
