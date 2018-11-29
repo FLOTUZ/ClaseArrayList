@@ -30,20 +30,20 @@ public class AppHerencia {
         }
 
         System.out.println("\t\t\tEmpleados");
-        System.out.printf("Empleados Base\n");
+        System.out.println("\nEmpleados Base\n");
 
         for (Empleado i : trabajador) {
             if (i instanceof EmpleadoBase) {
                 System.out.println(i);
             }
         }
-        System.out.println("Empleados eventuales\n");
+        /*System.out.println("Empleados eventuales\n");
         for (Empleado i : trabajador) {
             if (i instanceof EmpleadoEventual) {
                 System.out.println(i);
             }
-        }
-        System.out.println("Empleados Especializados\n");
+        }*/
+        System.out.println("\nEmpleados Especializados\n");
         for (Empleado i : trabajador) {
             if (i instanceof EmpleadoEspecializado) {
                 if (i.getTipo().equalsIgnoreCase("Plomero")) {

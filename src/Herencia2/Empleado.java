@@ -36,12 +36,16 @@ public class Empleado {
         return nombre;
     }
 
-    public float getSueldo() {
+    public double getSueldo() {
         return sueldo;
+    }
+    public double calcularSueldo(){
+
+        return 0;
     }
 
     public String toString(){
         return tipo + "\t" + nombre +"\t"
-                +puesto +"\t" + faltas + "\t" + sueldo;
+                +puesto +"\t" + faltas + "\t" + sueldo + "\t" + calcularSueldo();
     }
 }
